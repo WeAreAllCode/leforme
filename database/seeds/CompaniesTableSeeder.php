@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class UserRolesTableSeeder extends Seeder
+class CompaniesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,28 +11,31 @@ class UserRolesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('user_roles')->insert(
+        DB::table('companies')->insert(
         	[
         		[
-        			'role' => 'admin',
+        			'name' => 'Capella',
+        			'short_name' => 'CAP',
         			'created_at' => date("Y-m-d H:i:s")
         		],[
-        			'role' => 'manager',
+        			'name' => 'Flavour Art',
+        			'short_name' => 'FA',
         			'created_at' => date("Y-m-d H:i:s")
         		],[
-        			'role' => 'staff-lab',
+        			'name' => 'Flavor West',
+        			'short_name' => 'FW',
         			'created_at' => date("Y-m-d H:i:s")
         		],[
-        			'role' => 'staff-vava',
+        			'name' => 'Lorann',
+        			'short_name' => 'LA',
         			'created_at' => date("Y-m-d H:i:s")
         		],[
-        			'role' => 'staff-purple',
+        			'name' => 'Mt Baker Vapor',
+        			'short_name' => 'MBV',
         			'created_at' => date("Y-m-d H:i:s")
         		],[
-        			'role' => 'staff-columbia',
-        			'created_at' => date("Y-m-d H:i:s")
-        		],[
-        			'role' => 'staff-charleston',
+        			'name' => 'The Flavor Apprentice',
+        			'short_name' => 'TPA',
         			'created_at' => date("Y-m-d H:i:s")
         		]
         	]
