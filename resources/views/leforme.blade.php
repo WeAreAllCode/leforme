@@ -15,15 +15,15 @@
                                 </div>
                                 <div class="col-xs-7">
                                     <div class="numbers">
-                                        <p>Capacity</p>
-                                        105GB
+                                        <p>Orders</p>
+                                        0
                                     </div>
                                 </div>
                             </div>
                             <div class="footer">
                                 <hr />
                                 <div class="stats">
-                                    <i class="ti-reload"></i> Updated now
+                                    <i class="ti-timer"></i> In the last 8 hours
                                 </div>
                             </div>
                         </div>
@@ -40,15 +40,15 @@
                                 </div>
                                 <div class="col-xs-7">
                                     <div class="numbers">
-                                        <p>Revenue</p>
-                                        $1,345
+                                        <p>Orders</p>
+                                        3
                                     </div>
                                 </div>
                             </div>
                             <div class="footer">
                                 <hr />
                                 <div class="stats">
-                                    <i class="ti-calendar"></i> Last day
+                                    <i class="ti-timer"></i> In the last week
                                 </div>
                             </div>
                         </div>
@@ -65,15 +65,15 @@
                                 </div>
                                 <div class="col-xs-7">
                                     <div class="numbers">
-                                        <p>Errors</p>
-                                        23
+                                        <p>Orders</p>
+                                        5
                                     </div>
                                 </div>
                             </div>
                             <div class="footer">
                                 <hr />
                                 <div class="stats">
-                                    <i class="ti-timer"></i> In the last hour
+                                    <i class="ti-timer"></i> In the last 2 weeks
                                 </div>
                             </div>
                         </div>
@@ -90,15 +90,15 @@
                                 </div>
                                 <div class="col-xs-7">
                                     <div class="numbers">
-                                        <p>Followers</p>
-                                        +45
+                                        <p>Orders</p>
+                                        12
                                     </div>
                                 </div>
                             </div>
                             <div class="footer">
                                 <hr />
                                 <div class="stats">
-                                    <i class="ti-reload"></i> Updated now
+                                    <i class="ti-timer"></i> In the last month
                                 </div>
                             </div>
                         </div>

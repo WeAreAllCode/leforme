@@ -11,6 +11,40 @@
 			</a>
 		</div>
 
+		<div class="nav-user logo">
+			<div class="photo pull-left" style="width:30px;height:30px;margin:0 14px 0px 6px;">
+                <img class="img-responsive" style="border-radius:50%;" src="/img/faces/face-2.jpg">
+            </div>
+            <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                <span style="opacity: 1;line-height: 34px;display: block;position: relative;">
+					Chet Faker
+                    <b class="caret"></b>
+				</span>
+            </a>
+
+            <div class="clearfix"></div>
+
+            <div class="collapse" id="collapseExample">
+                <ul class="user-nav">
+                    <li>
+						<a href="/admin/users/1">
+							<span class="sidebar-normal">View Profile</span>
+						</a>
+					</li>
+                    <li>
+						<a href="/admin/users/1/edit">
+							<span class="sidebar-normal">Edit Profile</span>
+						</a>
+					</li>
+                    <li>
+						<a href="/">
+							<span class="sidebar-normal">Logout</span>
+						</a>
+					</li>
+                </ul>
+            </div>
+		</div>
+
 		<ul class="nav">
 			<li class="active">
 				<a href="/">
