@@ -1,1 +1,5 @@
-lab's flavors form
+@extends('layouts.master')
+
+@section('content')
+    lab's flavors form
+@endsection

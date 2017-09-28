@@ -32,6 +32,9 @@ Route::get('purple/juices', 'PurpleController@juices');
 Route::get('purple/products', 'PurpleController@products');
 Route::get('purple/supplies', 'PurpleController@supplies');
 
+/* ADMIN INDEX */
+Route::get('admin', 'AdminController@index');
+
 /* ITEMS INDEX + CRUD */
 Route::get('admin/items', 'ItemController@index');
 Route::get('admin/items/create', 'ItemController@create');

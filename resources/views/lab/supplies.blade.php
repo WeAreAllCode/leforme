@@ -1,1 +1,5 @@
-lab's supplies form
+@extends('layouts.master')
+
+@section('content')
+    lab's supplies form
+@endsection

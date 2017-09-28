@@ -1,1 +1,5 @@
-purple's supplies form
+@extends('layouts.master')
+
+@section('content')
+    purple's supplies form
+@endsection

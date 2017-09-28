@@ -1,1 +1,5 @@
-vava's supplies form
+@extends('layouts.master')
+
+@section('content')
+    vava's supplies form
+@endsection
