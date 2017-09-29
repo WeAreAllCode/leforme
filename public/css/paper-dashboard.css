@@ -1005,7 +1005,7 @@ textarea.form-control {
 .table-striped tbody > tr:nth-of-type(2n+1) {
   background-color: #fff; }
 .table-striped tbody > tr:nth-of-type(2n) {
-  background-color: #FFFCF5; }
+  background-color: rgba(216, 215, 211, 0.3); }
 .table-striped > thead > tr > th,
 .table-striped > tbody > tr > th,
 .table-striped > tfoot > tr > th,
@@ -1173,12 +1173,12 @@ textarea.form-control {
   margin-top: -5px; }
 
 .navbar-default {
-  background-color: #f4f3ef;
+  background-color: #d8d7d3;
   border-bottom: 1px solid #DDDDDD; }
   .navbar-default .brand {
     color: #66615b !important; }
   .navbar-default .navbar-nav > li > a:not(.btn) {
-    color: #9A9A9A; }
+    color: #777777; }
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:not(.btn):hover,
   .navbar-default .navbar-nav > .active > a:not(.btn):focus,
