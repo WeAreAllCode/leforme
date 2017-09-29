@@ -76,6 +76,12 @@
 					<p>Orders</p>
 				</a>
 			</li>
+			<li>
+				<a href="/admin">
+					<i class="ti-settings"></i>
+					<p>Admin</p>
+				</a>
+			</li>
 		</ul>
 	</div>
 </div>

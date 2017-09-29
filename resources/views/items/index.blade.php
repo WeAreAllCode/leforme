@@ -1,11 +1,15 @@
 @extends ('layouts.master')
 
+@section ('meta-title')
+Items | LeForme: How you get your merde.
+@endsection
+
 @section ('content')
 <div class="col-md-12 mt-20">
     <div class="card">
         <div class="header">
             <h4 class="title"><strong>Items</strong></h4>
-            <p class="category">Here is a subtitle for this table</p>
+            <p class="category">A list of all items. Click to edit. (hopefully)</p>
         </div>
         <div class="content table-responsive table-full-width">
             <table class="table table-striped pl-0 pr-0 mb-0">

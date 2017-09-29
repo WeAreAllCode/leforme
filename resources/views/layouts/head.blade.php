@@ -3,7 +3,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon.png">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-<title>Le Forme</title>
+<title>@yield('meta-title', 'LeForme: How you get your merde.')</title>
 
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <meta name="viewport" content="width=device-width" />
