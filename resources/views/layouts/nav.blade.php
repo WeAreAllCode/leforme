@@ -45,38 +45,40 @@
             </div>
 		</div>
 
+
+
 		<ul class="nav">
-			<li class="active">
+			<li class="{{ Request::is('/') ? 'active' : '' }}">
 				<a href="/">
 					<i class="ti-panel"></i>
 					<p>Dashboard</p>
 				</a>
 			</li>
-			<li>
+			<li class="{{ Request::is('lab') ? 'active' : '' }}">
 				<a href="/lab">
 					<i class="ti-user"></i>
 					<p>The Lab</p>
 				</a>
 			</li>
-			<li>
+			<li class="{{ Request::is('vava') ? 'active' : '' }}">
 				<a href="/vava">
 					<i class="ti-view-list-alt"></i>
 					<p>VaVaVape</p>
 				</a>
 			</li>
-			<li>
+			<li class="{{ Request::is('purple') ? 'active' : '' }}">
 				<a href="/purple">
 					<i class="ti-text"></i>
 					<p>Purple Haze</p>
 				</a>
 			</li>
-			<li>
+			<li class="{{ Request::is('admin/orders') ? 'active' : '' }}">
 				<a href="/admin/orders">
 					<i class="ti-pencil-alt2"></i>
 					<p>Orders</p>
 				</a>
 			</li>
-			<li>
+			<li class="{{ Request::is('admin') ? 'active' : '' }}">
 				<a href="/admin">
 					<i class="ti-settings"></i>
 					<p>Admin</p>
