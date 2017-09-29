@@ -25,7 +25,7 @@ Orders | LeForme: How you get your merde.
                     	<td>1</td>
                     	<td>Dakota Rice</td>
                     	<td>$36,738</td>
-                    	<td>Niger</td>
+                    	<td>Tiger</td>
                     	<td class="text-right"><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
                     </tr>
                     <tr>

@@ -1,1 +1,0 @@
-locations show
