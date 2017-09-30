@@ -28,7 +28,7 @@ Route::resource('orders', 'OrderController');
 Route::prefix('admin')->group(function () {
 	
 	/* ADMIN INDEX */
-	Route::view('/admin', 'admin.index');
+	Route::view('/', 'admin.index');
 
 	/* ITEMS INDEX + CRUD */
 	Route::resource('items', 'ItemController');
