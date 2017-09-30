@@ -33,7 +33,7 @@ class SizeController extends Controller
     /* SIZES EDIT */
     public function edit($id)
     {
-        return view('sizes.edit');
+        //
     }
 
     /* SIZES UPDATE */

@@ -33,7 +33,7 @@ class OrderController extends Controller
     /* ORDERS EDIT */
     public function edit($id)
     {
-        return view('orders.edit');
+        //
     }
 
     /* ORDERS UPDATE */

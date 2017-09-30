@@ -33,7 +33,7 @@ class LocationController extends Controller
     /* LOCATIONS EDIT */
     public function edit($id)
     {
-        return view('locations.edit');
+        //
     }
 
     /* LOCATIONS UPDATE */

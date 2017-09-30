@@ -34,7 +34,7 @@ class CategoryController extends Controller
     /* CATEGORIES EDIT */
     public function edit()
     {
-        return view('categories.edit');
+        //
     }
 
     /* CATEGORIES UPDATE */

@@ -33,7 +33,7 @@ class UserRoleController extends Controller
     /* USER ROLES EDIT */
     public function edit($id)
     {
-        return view('user-roles.edit');
+        //
     }
 
     /* USER ROLES UPDATE */

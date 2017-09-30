@@ -21,68 +21,35 @@ Route::get('purple/juices', 'PurpleController@juices');
 Route::get('purple/products', 'PurpleController@products');
 Route::get('purple/supplies', 'PurpleController@supplies');
 
-/* ADMIN INDEX */
-Route::get('admin', 'AdminController@index');
-
-/* ITEMS INDEX + CRUD */
-Route::get('admin/items', 'ItemController@index');
-Route::get('admin/items/create', 'ItemController@create');
-Route::post('admin/items', 'ItemController@store');
-Route::get('admin/items/{item}', 'ItemController@edit');
-Route::patch('admin/items/{item}', 'ItemController@update');
-Route::delete('admin/items/{item}', 'ItemController@destroy');
-
-/* CATEGORIES INDEX + CRUD */
-Route::get('admin/categories', 'CategoryController@index');
-Route::get('admin/categories/create', 'CategoryController@create');
-Route::post('admin/categories', 'CategoryController@store');
-Route::get('admin/categories/{category}', 'CategoryController@edit');
-Route::patch('admin/categories/{category}', 'CategoryController@update');
-Route::delete('admin/categories/{category}', 'CategoryController@destroy');
-
-/* COMPANIES INDEX + CRUD */
-Route::get('admin/companies', 'CompanyController@index');
-Route::get('admin/companies/create', 'CompanyController@create');
-Route::post('admin/companies', 'CompanyController@store');
-Route::get('admin/companies/{company}', 'CompanyController@edit');
-Route::patch('admin/companies/{company}', 'CompanyController@update');
-Route::delete('admin/companies/{company}', 'CompanyController@destroy');
-
-/* LOCATIONS INDEX + CRUD */
-Route::get('admin/locations', 'LocationController@index');
-Route::get('admin/locations/create', 'LocationController@create');
-Route::post('admin/locations', 'LocationController@store');
-Route::get('admin/locations/{location}', 'LocationController@edit');
-Route::patch('admin/locations/{location}', 'LocationController@update');
-Route::delete('admin/locations/{location}', 'LocationController@destroy');
-
 /* ORDERS INDEX + CR */
-Route::get('admin/orders', 'OrderController@index');
-Route::get('admin/orders/create', 'OrderController@create');
-Route::post('admin/orders', 'OrderController@store');
-Route::get('admin/orders/{order}', 'OrderController@show');
+Route::resource('orders', 'OrderController');
 
-/* SIZES INDEX + CRUD */
-Route::get('admin/sizes', 'SizeController@index');
-Route::get('admin/sizes/create', 'SizeController@create');
-Route::post('admin/sizes', 'SizeController@store');
-Route::get('admin/sizes/{size}', 'SizeController@edit');
-Route::patch('admin/sizes/{size}', 'SizeController@update');
-Route::delete('admin/sizes/{size}', 'SizeController@destroy');
+/* ADMIN SECTION  ---  Managers + Admin Roles Only */
+Route::prefix('admin')->group(function () {
+	
+	/* ADMIN INDEX */
+	Route::view('/admin', 'admin.index');
 
-/* USERS INDEX + CRUD */
-Route::get('admin/users', 'UserController@index');
-Route::get('admin/users/create', 'UserController@create');
-Route::post('admin/users', 'UserController@store');
-Route::get('admin/users/{user}', 'UserController@edit');
-Route::patch('admin/users/{user}', 'UserController@update');
-Route::delete('admin/users/{user}', 'UserController@destroy');
+	/* ITEMS INDEX + CRUD */
+	Route::resource('items', 'ItemController');
 
-/* USER ROLES INDEX + CRUD */
-Route::get('admin/user-roles', 'UserRoleController@index');
-Route::get('admin/user-roles/create', 'UserRoleController@create');
-Route::post('admin/user-roles', 'UserRoleController@store');
-Route::get('admin/user-roles/{user_role}', 'UserRoleController@edit');
-Route::patch('admin/user-roles/{user_role}', 'UserRoleController@update');
-Route::delete('admin/user-roles/{user_role}', 'UserRoleController@destroy');
+	/* CATEOGORIES INDEX + CRUD */
+	Route::resource('categories', 'CategoryController');
+
+	/* COMPANIES INDEX + CRUD */
+	Route::resource('companies', 'CompanyController');
+
+	/* LOCATIONS INDEX + CRUD */
+	Route::resource('locations', 'LocationController');
+
+	/* SIZES INDEX + CRUD */
+	Route::resource('sizes', 'SizeController');
+
+	/* USERS INDEX + CRUD  ---  Admin Roles Only */
+	Route::resource('users', 'UserController');
+
+	/* USER ROLES INDEX + CRUD  ---  Admin Roles Only */
+	Route::resource('user-roles', 'UserRoleController');
+
+});
 

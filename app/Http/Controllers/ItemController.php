@@ -33,7 +33,7 @@ class ItemController extends Controller
     /* ITEMS EDIT */
     public function edit($id)
     {
-        return view('items.edit');
+        //
     }
 
     /* ITEMS UPDATE */

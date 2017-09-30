@@ -33,7 +33,7 @@ class CompanyController extends Controller
     /* COMPANIES EDIT */
     public function edit($id)
     {
-        return view('companies.edit');
+        //
     }
 
     /* COMPANIES UPDATE */

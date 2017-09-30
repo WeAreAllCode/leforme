@@ -33,7 +33,7 @@ class UserController extends Controller
     /* USERS EDIT */
     public function edit($id)
     {
-        return view('users.edit');
+        //
     }
 
     /* USERS UPDATE */
