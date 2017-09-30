@@ -56,7 +56,7 @@
 
 			<li>
 				<a data-toggle="collapse" href="#nav-theLab" class="mb-0 {{ Request::is('lab') ? 'active' : '' }}" aria-expanded="false">
-					<i class="ti-clipboard"></i>
+					<i class="ti-wand"></i>
 					<p>The Lab <b class="caret"></b> </p>
 				</a>
 				<div class="collapse" id="nav-theLab" aria-expanded="false" style="">
@@ -82,23 +82,23 @@
 
 			<li>
 				<a data-toggle="collapse" href="#nav-vavaVape" class="mb-0 {{ Request::is('lab') ? 'active' : '' }}" aria-expanded="false">
-					<i class="ti-clipboard"></i>
+					<i class="ti-cloud"></i>
 					<p>VaVaVape <b class="caret"></b> </p>
 				</a>
 				<div class="collapse" id="nav-vavaVape" aria-expanded="false" style="">
 					<ul class="nav lf-side-nav m-0 mb-20">
 						<li>
-							<a href="/lab/flavors" class="">
-								<span class="sidebar-normal">Flavors</span>
+							<a href="/vava/juices" class="">
+								<span class="sidebar-normal">Juices</span>
 							</a>
 						</li>
 						<li>
-							<a href="/lab/labels" class="">
-								<span class="sidebar-normal">Labels</span>
+							<a href="/vava/products" class="">
+								<span class="sidebar-normal">Products</span>
 							</a>
 						</li>
 						<li>
-							<a href="/lab/supplies" class="">
+							<a href="/vava/supplies" class="">
 								<span class="sidebar-normal">Supplies</span>
 							</a>
 						</li>
@@ -114,17 +114,17 @@
 				<div class="collapse" id="nav-purpleHaze" aria-expanded="false" style="">
 					<ul class="nav lf-side-nav m-0 mb-20">
 						<li>
-							<a href="/lab/flavors" class="">
-								<span class="sidebar-normal">Flavors</span>
+							<a href="/purple/juices" class="">
+								<span class="sidebar-normal">Juices</span>
 							</a>
 						</li>
 						<li>
-							<a href="/lab/labels" class="">
-								<span class="sidebar-normal">Labels</span>
+							<a href="/purple/products" class="">
+								<span class="sidebar-normal">Products</span>
 							</a>
 						</li>
 						<li>
-							<a href="/lab/supplies" class="">
+							<a href="/purple/supplies" class="">
 								<span class="sidebar-normal">Supplies</span>
 							</a>
 						</li>

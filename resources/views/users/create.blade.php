@@ -10,40 +10,43 @@ Add User | Users | LeForme: How you get your merde.
         <div class="header">
             <h4 class="title">Add User</h4>
         </div>
+
         <div class="content">
             <form>
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="form-group">
-                            <label>Company</label>
-                            <input type="text" class="form-control border-input" placeholder="Company" value="Creative Code Inc.">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Username</label>
-                            <input type="text" class="form-control border-input" placeholder="Username" value="michael23">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control border-input" placeholder="Email">
-                        </div>
-                    </div>
-                </div>
-
+                <hr class="mt-0">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>First Name</label>
-                            <input type="text" class="form-control border-input" placeholder="Company" value="Chet">
+                            <input type="text" class="form-control border-input" placeholder="First Name" value="">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Last Name</label>
-                            <input type="text" class="form-control border-input" placeholder="Last Name" value="Faker">
+                            <input type="text" class="form-control border-input" placeholder="Last Name" value="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="text" class="form-control border-input" placeholder="Email Address" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Status</label>
+                            <div class="form-control border-input">
+                                <label class="radio-inline">
+                                    <input type="radio" name="is_active" value="1" checked="checked">Active
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="is_active" value="2">Inactive
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -51,42 +54,35 @@ Add User | Users | LeForme: How you get your merde.
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label>Address</label>
-                            <input type="text" class="form-control border-input" placeholder="Home Address" value="Melbourne, Australia">
+                            <label>Role</label>
+                            <div class="form-control border-input">
+                                <label class="radio-inline">
+                                    <input type="radio" name="name" value="1">Admin
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="name" value="2">Manager
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="name" value="3">Lab
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="name" value="4">Vava
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="name" value="5">Purple
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="name" value="6">Columbia
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="name" value="7">Chuck
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>City</label>
-                            <input type="text" class="form-control border-input" placeholder="City" value="Melbourne">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Country</label>
-                            <input type="text" class="form-control border-input" placeholder="Country" value="Australia">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Postal Code</label>
-                            <input type="number" class="form-control border-input" placeholder="ZIP Code">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label>About Me</label>
-                            <textarea rows="5" class="form-control border-input" placeholder="Here can be your description" value="Mike">Oh so, your weak rhyme You doubt I'll bother, reading into it I'll probably won't, left to my own devices But that's the difference in our opinions.</textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
+                <hr class="lf-hr-mt-36">
+                <div class="text-right mb-10">
                     <button type="submit" class="btn btn-info btn-fill btn-wd">Add User</button>
                 </div>
                 <div class="clearfix"></div>

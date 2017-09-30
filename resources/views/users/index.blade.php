@@ -16,59 +16,59 @@ Users | LeForme: How you get your merde.
                 <thead class="lf-thead">
                     <th><strong>ID</strong></th>
                 	<th><strong>Name</strong></th>
-                	<th><strong>Salary</strong></th>
-                	<th><strong>Country</strong></th>
-                	<th><strong>City</strong></th>
-                	<th><strong>City</strong></th>
+                	<th><strong>Email</strong></th>
+                    <th><strong>Role</strong></th>
+                	<th><strong>Active</strong></th>
+                	<th><strong>Actions</strong></th>
                 </thead>
                 <tbody>
                     <tr>
                     	<td>1</td>
                     	<td>Dakota Rice</td>
-                    	<td>$36,738</td>
-                    	<td>Niger</td>
-                    	<td>Oud-Turnhout</td>
-                    	<td>Oud-Turnhout</td>
+                    	<td>joey@moticorp.com</td>
+                        <td>Admin</td>
+                    	<td>Yes</td>
+                    	<td>X</td>
                     </tr>
                     <tr>
                     	<td>2</td>
                     	<td>Minerva Hooper</td>
-                    	<td>$23,789</td>
-                    	<td>Curaçao</td>
-                    	<td>Sinaai-Waas</td>
-                    	<td>Oud-Turnhout</td>
+                    	<td>emily@moticorp.com</td>
+                        <td>Manager</td>
+                    	<td>Yes</td>
+                    	<td>X</td>
                     </tr>
                     <tr>
                     	<td>3</td>
                     	<td>Sage Rodriguez</td>
-                    	<td>$56,142</td>
-                    	<td>Netherlands</td>
-                    	<td>Baileux</td>
-                    	<td>Oud-Turnhout</td>
+                    	<td>john@moticorp.com</td>
+                        <td>Lab</td>
+                    	<td>Yes</td>
+                    	<td>X</td>
                     </tr>
                     <tr>
                     	<td>4</td>
                     	<td>Philip Chaney</td>
-                    	<td>$38,735</td>
-                    	<td>Korea, South</td>
-                    	<td>Overland Park</td>
-                    	<td>Oud-Turnhout</td>
+                    	<td>steve@moticorp.com</td>
+                        <td>Chuck</td>
+                    	<td>Yes</td>
+                    	<td>X</td>
                     </tr>
                     <tr>
                     	<td>5</td>
                     	<td>Doris Greene</td>
-                    	<td>$63,542</td>
-                    	<td>Malawi</td>
-                    	<td>Feldkirchen in Kärnten</td>
-                    	<td>Oud-Turnhout</td>
+                    	<td>rich@moticorp.com</td>
+                        <td>Columbia</td>
+                    	<td>Yes</td>
+                    	<td>X</td>
                     </tr>
                     <tr>
                     	<td>6</td>
                     	<td>Mason Porter</td>
-                    	<td>$78,615</td>
-                    	<td>Chile</td>
-                    	<td>Gloucester</td>
-                    	<td>Oud-Turnhout</td>
+                    	<td>mason@gmail.com</td>
+                        <td>Purple</td>
+                    	<td>No</td>
+                    	<td>X</td>
                     </tr>
                 </tbody>
             </table>
