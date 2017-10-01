@@ -8,67 +8,56 @@ User Roles | LeForme: How you get your merde.
 <div class="col-md-12 mt-20">
     <div class="card">
         <div class="header">
-            <h4 class="title"><strong>User Roles</strong></h4>
-            <p class="category">A list of all user roles. Click to edit. (hopefully)</p>
+            <div class="pull-left">
+                <h4 class="title"><strong>User Roles</strong></h4>
+                <p class="category">A list of all user roles. Click the pencil to edit.</p>
+            </div>
+            <div class="pull-right mb-20">
+                <a href="/admin/user-roles/create" class="btn btn-default btn-fill btn-wd">ADD USER</a>
+            </div>
         </div>
         <div class="content table-responsive table-full-width">
             <table class="table table-striped pl-0 pr-0 mb-0">
                 <thead class="lf-thead">
                     <th><strong>ID</strong></th>
                 	<th><strong>Name</strong></th>
-                	<th><strong>Salary</strong></th>
-                	<th><strong>Country</strong></th>
-                	<th><strong>City</strong></th>
-                	<th><strong>City</strong></th>
+                	<th class="text-center"><strong>Edit</strong></th>
                 </thead>
                 <tbody>
                     <tr>
                     	<td>1</td>
-                    	<td>Dakota Rice</td>
-                    	<td>$36,738</td>
-                    	<td>Niger</td>
-                    	<td>Oud-Turnhout</td>
-                    	<td>Oud-Turnhout</td>
+                    	<td>Admin</td>
+                    	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
                     </tr>
                     <tr>
                     	<td>2</td>
-                    	<td>Minerva Hooper</td>
-                    	<td>$23,789</td>
-                    	<td>Curaçao</td>
-                    	<td>Sinaai-Waas</td>
-                    	<td>Oud-Turnhout</td>
+                    	<td>Manager</td>
+                    	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
                     </tr>
                     <tr>
                     	<td>3</td>
-                    	<td>Sage Rodriguez</td>
-                    	<td>$56,142</td>
-                    	<td>Netherlands</td>
-                    	<td>Baileux</td>
-                    	<td>Oud-Turnhout</td>
+                    	<td>Staff-Lab</td>
+                    	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
                     </tr>
                     <tr>
                     	<td>4</td>
-                    	<td>Philip Chaney</td>
-                    	<td>$38,735</td>
-                    	<td>Korea, South</td>
-                    	<td>Overland Park</td>
-                    	<td>Oud-Turnhout</td>
+                    	<td>Staff-Vava</td>
+                    	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
                     </tr>
                     <tr>
                     	<td>5</td>
-                    	<td>Doris Greene</td>
-                    	<td>$63,542</td>
-                    	<td>Malawi</td>
-                    	<td>Feldkirchen in Kärnten</td>
-                    	<td>Oud-Turnhout</td>
+                    	<td>Staff-Purple</td>
+                    	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
                     </tr>
                     <tr>
                     	<td>6</td>
-                    	<td>Mason Porter</td>
-                    	<td>$78,615</td>
-                    	<td>Chile</td>
-                    	<td>Gloucester</td>
-                    	<td>Oud-Turnhout</td>
+                    	<td>Staff-Columbia</td>
+                    	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Staff-Charleston</td>
+                        <td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
                     </tr>
                 </tbody>
             </table>
