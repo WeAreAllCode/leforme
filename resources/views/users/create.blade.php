@@ -30,23 +30,10 @@ Add User | Users | LeForme: How you get your merde.
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="form-group">
                             <label>Email Address</label>
                             <input type="text" class="form-control border-input" placeholder="Email Address" name="email">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Status</label>
-                            <div class="form-control border-input">
-                                <label class="radio-inline">
-                                    <input type="radio" name="is_active" value="1" checked="checked">Active
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="is_active" value="2">Inactive
-                                </label>
-                            </div>
                         </div>
                     </div>
                 </div>

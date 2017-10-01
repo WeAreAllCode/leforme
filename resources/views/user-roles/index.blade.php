@@ -19,9 +19,9 @@ User Roles | LeForme: How you get your merde.
         <div class="content table-responsive table-full-width">
             <table class="table table-striped pl-0 pr-0 mb-0">
                 <thead class="lf-thead">
-                    <th><strong>ID</strong></th>
-                	<th><strong>Name</strong></th>
-                	<th class="text-center"><strong>Edit</strong></th>
+                    <th class="col-sm-1"><strong>ID</strong></th>
+                	<th class="col-sm-9"><strong>Name</strong></th>
+                	<th class="text-center col-sm-2"><strong>Edit</strong></th>
                 </thead>
                 <tbody>
                     <tr>

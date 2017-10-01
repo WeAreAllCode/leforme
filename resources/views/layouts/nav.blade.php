@@ -161,11 +161,6 @@
 							</a>
 						</li>
 						<li>
-							<a href="/admin/items" class="">
-								<span class="sidebar-normal">Items</span>
-							</a>
-						</li>
-						<li>
 							<a href="/admin/locations" class="">
 								<span class="sidebar-normal">Locations</span>
 							</a>

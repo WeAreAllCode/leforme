@@ -31,7 +31,7 @@ Chet Faker | Users | LeForme: How you get your merde.
                     <h5>2<br /><small>Month</small></h5>
                 </div>
                 <div class="col-sm-3 col-md-3">
-                    <h5>34<br /><small>Life Time</small></h5>
+                    <h5>34<br /><small>Life</small></h5>
                 </div>
             </div>
         </div>
