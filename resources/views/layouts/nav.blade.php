@@ -49,7 +49,7 @@
 		<ul class="nav">
 			<li class="{{ Request::is('/') ? 'active' : '' }}">
 				<a href="/">
-					<i class="ti-panel"></i>
+					<i class="ti-bar-chart"></i>
 					<p>Dashboard</p>
 				</a>
 			</li>
@@ -108,7 +108,7 @@
 
 			<li>
 				<a data-toggle="collapse" href="#nav-purpleHaze" class="mb-0 {{ Request::is('lab') ? 'active' : '' }}" aria-expanded="false">
-					<i class="ti-clipboard"></i>
+					<i class="ti-star"></i>
 					<p>Purple Haze <b class="caret"></b> </p>
 				</a>
 				<div class="collapse" id="nav-purpleHaze" aria-expanded="false" style="">
@@ -133,14 +133,14 @@
 			</li>
 			<li class="mb-20 {{ Request::is('orders') ? 'active' : '' }}">
 				<a href="/orders">
-					<i class="ti-settings"></i>
+					<i class="ti-clipboard"></i>
 					<p>Orders</p>
 				</a>
 			</li>
 			<hr class="lf-side-nav-hr" />
 			<li>
 				<a data-toggle="collapse" href="#nav-admin" class="mb-0 {{ Request::is('lab') ? 'active' : '' }}" aria-expanded="false">
-					<i class="ti-clipboard"></i>
+					<i class="ti-settings"></i>
 					<p>Admin <b class="caret"></b> </p>
 				</a>
 				<div class="collapse" id="nav-admin" aria-expanded="false" style="">

@@ -14,37 +14,43 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->insert(
         	[
         		[
-        			'name' => 'joey',
+        			'first_name' => 'joey',
+                    'last_name' => 'user',
         			'email' => 'joey@moticorp.com',
         			'password' => 'secret',
         			'user_role_id' => '1',
         			'created_at' => date("Y-m-d H:i:s")
         		],[
-        			'name' => 'lab',
+        			'first_name' => 'lab',
+                    'last_name' => 'user',
         			'email' => 'joey+1@moticorp.com',
         			'password' => 'secret',
         			'user_role_id' => '1',
         			'created_at' => date("Y-m-d H:i:s")
         		],[
-        			'name' => 'vava',
+        			'first_name' => 'vava',
+                    'last_name' => 'user',
         			'email' => 'joey+2@moticorp.com',
         			'password' => 'secret',
         			'user_role_id' => '1',
         			'created_at' => date("Y-m-d H:i:s")
         		],[
-        			'name' => 'purple',
+        			'first_name' => 'purple',
+                    'last_name' => 'user',
         			'email' => 'joey+3@moticorp.com',
         			'password' => 'secret',
         			'user_role_id' => '1',
         			'created_at' => date("Y-m-d H:i:s")
         		],[
-        			'name' => 'columbia',
+        			'first_name' => 'columbia',
+                    'last_name' => 'user',
         			'email' => 'joey+4@moticorp.com',
         			'password' => 'secret',
         			'user_role_id' => '1',
         			'created_at' => date("Y-m-d H:i:s")
         		],[
-        			'name' => 'charleston',
+        			'first_name' => 'charleston',
+                    'last_name' => 'user',
         			'email' => 'joey+5@moticorp.com',
         			'password' => 'secret',
         			'user_role_id' => '1',
