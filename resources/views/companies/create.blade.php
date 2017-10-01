@@ -18,13 +18,13 @@ Add Company | Companies | LeForme: How you get your merde.
                     <div class="col-md-8">
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control border-input" name="name" placeholder="Name" value="Capella">
+                            <input type="text" class="form-control border-input" name="name" placeholder="Name" value="">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label>Short Name</label>
-                            <input type="text" class="form-control border-input" name="short_name" placeholder="Short Name" value="CAP">
+                            <input type="text" class="form-control border-input" name="short_name" placeholder="Short Name" value="">
                         </div>
                     </div>
                 </div>

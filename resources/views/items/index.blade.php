@@ -19,61 +19,68 @@ Items | LeForme: How you get your merde.
         <div class="content table-responsive table-full-width">
             <table class="table table-striped pl-0 pr-0 mb-0">
                 <thead class="lf-thead">
-                    <th><strong>ID</strong></th>
-                    <th><strong>Name</strong></th>
-                    <th><strong>Email</strong></th>
-                    <th><strong>Role</strong></th>
-                    <th class="text-center"><strong>Active</strong></th>
-                    <th class="text-center"><strong>Edit</strong></th>
+                    <th class="col-sm-1"><strong>ID</strong></th>
+                    <th class="col-sm-5"><strong>Name</strong></th>
+                    <th class="col-sm-2"><strong>Categories</strong></th>
+                    <th class="col-sm-1"><strong>Company</strong></th>
+                    <th class="col-sm-1 text-center"><strong>Drip</strong></th>
+                    <th class="col-sm-1 text-center"><strong>Active</strong></th>
+                    <th class="col-sm-1 text-center"><strong>Edit</strong></th>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Dakota Rice</td>
-                        <td>joey@moticorp.com</td>
-                        <td>Admin</td>
+                        <td>Cake Batter</td>
+                        <td>Flavors</td>
+                        <td>CAP</td>
+                        <td class="text-center"></td>
                         <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/users/1"><i class="ti-pencil"></i></td>
+                        <td class="text-center"><a href="/admin/items/1"><i class="ti-pencil"></i></td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Minerva Hooper</td>
-                        <td>emily@moticorp.com</td>
-                        <td>Manager</td>
+                        <td>Bad Ass Blueberry</td>
+                        <td>Juices, Labels</td>
+                        <td></td>
                         <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/users/1"><i class="ti-pencil"></i></td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center"><a href="/admin/items/1"><i class="ti-pencil"></i></td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Sage Rodriguez</td>
-                        <td>john@moticorp.com</td>
-                        <td>Lab</td>
+                        <td>30mL Bottles - Clear</td>
+                        <td>Supplies</td>
+                        <td></td>
+                        <td class="text-center"></td>
                         <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/users/1"><i class="ti-pencil"></i></td>
+                        <td class="text-center"><a href="/admin/items/1"><i class="ti-pencil"></i></td>
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>Philip Chaney</td>
-                        <td>steve@moticorp.com</td>
-                        <td>Chuck</td>
+                        <td>Windex</td>
+                        <td>Supplies</td>
+                        <td></td>
+                        <td class="text-center"></td>
                         <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/users/1"><i class="ti-pencil"></i></td>
+                        <td class="text-center"><a href="/admin/items/1"><i class="ti-pencil"></i></td>
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>Doris Greene</td>
-                        <td>rich@moticorp.com</td>
-                        <td>Columbia</td>
+                        <td>Vanilla Custard</td>
+                        <td>Flavors</td>
+                        <td>TFA</td>
+                        <td class="text-center"></td>
                         <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/users/1"><i class="ti-pencil"></i></td>
+                        <td class="text-center"><a href="/admin/items/1"><i class="ti-pencil"></i></td>
                     </tr>
                     <tr>
                         <td>6</td>
-                        <td>Mason Porter</td>
-                        <td>mason@gmail.com</td>
-                        <td>Purple</td>
-                        <td class="text-center">No</td>
-                        <td class="text-center"><a href="/admin/users/1"><i class="ti-pencil"></i></td>
+                        <td>650 Starter Kit - Black</td>
+                        <td>Products</td>
+                        <td></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center"><a href="/admin/items/1"><i class="ti-pencil"></i></td>
                     </tr>
                 </tbody>
             </table>

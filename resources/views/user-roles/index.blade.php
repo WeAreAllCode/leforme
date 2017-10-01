@@ -13,7 +13,7 @@ User Roles | LeForme: How you get your merde.
                 <p class="category">A list of all user roles. Click the pencil to edit.</p>
             </div>
             <div class="pull-right mb-20">
-                <a href="/admin/user-roles/create" class="btn btn-default btn-fill btn-wd">ADD USER</a>
+                <a href="/admin/user-roles/create" class="btn btn-default btn-fill btn-wd">ADD USER ROLE</a>
             </div>
         </div>
         <div class="content table-responsive table-full-width">
