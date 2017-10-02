@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Size;
 use Illuminate\Http\Request;
 
 class SizeController extends Controller
@@ -9,7 +10,8 @@ class SizeController extends Controller
     /* SIZES INDEX */
     public function index()
     {
-        return view('sizes.index');
+        $sizes = Size::orderBy('id')->get();
+        return view('sizes.index', compact('sizes'));
     }
 
     /* SIZES CREATE */

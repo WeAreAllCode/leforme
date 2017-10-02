@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Order;
+use App\Item;
+use App\Category;
+use App\Size;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -9,7 +13,8 @@ class OrderController extends Controller
     /* ORDERS INDEX */
     public function index()
     {
-        return view('orders.index');
+        $orders = Order::orderBy('created_on')->get();
+        return view('orders.index', compact('orders'));
     }
 
     /* ORDERS CREATE */

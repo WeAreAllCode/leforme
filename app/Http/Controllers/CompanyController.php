@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Company;
 use Illuminate\Http\Request;
 
 class CompanyController extends Controller
@@ -9,7 +10,8 @@ class CompanyController extends Controller
     /* COMPANIES INDEX */
     public function index()
     {
-        return view('companies.index');
+        $companies = Company::orderBy('id')->get();
+        return view('companies.index', compact('companies'));
     }
 
     /* COMPANIES CREATE */

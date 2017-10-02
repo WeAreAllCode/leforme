@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -9,7 +10,8 @@ class UserController extends Controller
     /* USERS INDEX */
     public function index()
     {
-        return view('users.index');
+        $users = User::orderBy('id')->get();
+        return view('users.index', compact('users'));
     }
 
     /* USERS CREATE */

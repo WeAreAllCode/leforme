@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Item;
+use App\Category;
+use App\Company;
 use Illuminate\Http\Request;
 
 class ItemController extends Controller
@@ -9,7 +12,8 @@ class ItemController extends Controller
     /* ITEMS INDEX */
     public function index()
     {
-        return view('items.index');
+        $items = Item::orderBy('id')->get();
+        return view('items.index', compact('items'));
     }
 
     /* ITEMS CREATE */

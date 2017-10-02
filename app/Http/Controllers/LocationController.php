@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Location;
 use Illuminate\Http\Request;
 
 class LocationController extends Controller
@@ -9,7 +10,8 @@ class LocationController extends Controller
     /* LOCATIONS INDEX */
     public function index()
     {
-        return view('locations.index');
+        $locations = Location::orderBy('id')->get();
+        return view('locations.index', compact('locations'));
     }
 
     /* LOCATIONS CREATE */

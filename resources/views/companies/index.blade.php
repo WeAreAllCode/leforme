@@ -20,20 +20,22 @@ Companies | LeForme: How you get your merde.
             <table class="table table-striped pl-0 pr-0 mb-0">
                 <thead class="lf-thead">
                     <th class="col-sm-1"><strong>ID</strong></th>
-                    <th class="col-sm-5"><strong>Name</strong></th>
-                    <th class="col-sm-2"><strong>Short</strong></th>
-                    <th class="col-sm-2 text-center"><strong>Active</strong></th>
-                    <th class="col-sm-2 text-center"><strong>Edit</strong></th>
+                    <th class="col-sm-8"><strong>Name</strong></th>
+                    <th class="col-sm-1"><strong>Short</strong></th>
+                    <th class="col-sm-1 text-center"><strong>Active</strong></th>
+                    <th class="col-sm-1 text-center"><strong>Edit</strong></th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Capella</td>
-                        <td>CAP</td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/companies/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
+                    @foreach ($companies as $company)
+                        <tr>
+                            <td>{{$company->id}}</td>
+                            <td class="text-capitalize">{{$company->name}}</td>
+                            <td class="text-uppercase">{{$company->short_name}}</td>
+                            <td class="text-center">{{ $company->is_active == 1 ? 'Yes' : 'No' }}</td>
+                            <td class="text-center"><a href="/admin/companies/{{$company->id}}"><i class="ti-pencil"></i></td>
+                        </tr>
+                    @endforeach
+                    {{-- <tr>
                         <td>2</td>
                         <td>Flavor Art</td>
                         <td>FA</td>
@@ -60,7 +62,7 @@ Companies | LeForme: How you get your merde.
                         <td>LA</td>
                         <td class="text-center">Yes</td>
                         <td class="text-center"><a href="/admin/companies/1"><i class="ti-pencil"></i></td>
-                    </tr>
+                    </tr> --}}
                 </tbody>
             </table>
 

@@ -8,8 +8,9 @@ use Illuminate\Http\Request;
 class CategoryController extends Controller
 {
     /* CATEGORIES INDEX */
-    public function index(Category $categories)
+    public function index()
     {
+        $categories = Category::orderBy('id')->get();
         return view('categories.index', compact('categories'));
     }
 

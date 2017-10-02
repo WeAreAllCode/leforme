@@ -20,41 +20,19 @@ Locations | LeForme: How you get your merde.
             <table class="table table-striped pl-0 pr-0 mb-0">
                 <thead class="lf-thead">
                     <th class="col-sm-1"><strong>ID</strong></th>
-                    <th class="col-sm-7"><strong>Name</strong></th>
-                    <th class="col-sm-2 text-center"><strong>Active</strong></th>
-                    <th class="col-sm-2 text-center"><strong>Edit</strong></th>
+                    <th class="col-sm-9"><strong>Name</strong></th>
+                    <th class="col-sm-1 text-center"><strong>Active</strong></th>
+                    <th class="col-sm-1 text-center"><strong>Edit</strong></th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Lab</td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/locations/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Vava</td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/locations/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Purple</td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/locations/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Columbia</td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/locations/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Charleston</td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/locations/1"><i class="ti-pencil"></i></td>
-                    </tr>
+                    @foreach ($locations as $location)
+                        <tr>
+                            <td>{{$location->id}}</td>
+                            <td class="text-capitalize">{{$location->name}}</td>
+                            <td class="text-center">{{ $location->is_active == 1 ? 'Yes' : 'No' }}</td>
+                            <td class="text-center"><a href="/admin/locations/{{$location->id}}"><i class="ti-pencil"></i></td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
 

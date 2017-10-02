@@ -40,6 +40,19 @@
 .pl-15 { padding-left:15px !important; }
 .pl-20 { padding-left:20px !important; }
 
+.lf-txt-left {
+	text-align: left !important;
+}
+.lf-card-form-group a {
+	text-decoration: none;
+	color: #252422;
+}
+.lf-btn-filler {
+    height: 4em;
+    width: 5%;
+    margin-left: 1.3em;
+}
+.color-tab-left { border-left: 16px solid #68B3C8; }
 .lf-hr-mt-36 { margin-top:36px; }
 .lf-side-nav-hr {
 	border-top: 1px solid rgba(255, 255, 255, 0.3);

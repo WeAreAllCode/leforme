@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\UserRole;
 use Illuminate\Http\Request;
 
 class UserRoleController extends Controller
@@ -9,7 +10,8 @@ class UserRoleController extends Controller
     /* USER ROLES INDEX */
     public function index()
     {
-        return view('user-roles.index');
+        $userRoles = UserRole::orderBy('id')->get();
+        return view('user-roles.index', compact('userRoles'));
     }
 
     /* USER ROLES CREATE */

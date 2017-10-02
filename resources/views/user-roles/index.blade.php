@@ -20,45 +20,17 @@ User Roles | LeForme: How you get your merde.
             <table class="table table-striped pl-0 pr-0 mb-0">
                 <thead class="lf-thead">
                     <th class="col-sm-1"><strong>ID</strong></th>
-                	<th class="col-sm-9"><strong>Name</strong></th>
-                	<th class="text-center col-sm-2"><strong>Edit</strong></th>
+                	<th class="col-sm-10"><strong>Name</strong></th>
+                	<th class="text-center col-sm-1"><strong>Edit</strong></th>
                 </thead>
                 <tbody>
-                    <tr>
-                    	<td>1</td>
-                    	<td>Admin</td>
-                    	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                    	<td>2</td>
-                    	<td>Manager</td>
-                    	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                    	<td>3</td>
-                    	<td>Staff-Lab</td>
-                    	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                    	<td>4</td>
-                    	<td>Staff-Vava</td>
-                    	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                    	<td>5</td>
-                    	<td>Staff-Purple</td>
-                    	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                    	<td>6</td>
-                    	<td>Staff-Columbia</td>
-                    	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Staff-Charleston</td>
-                        <td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
-                    </tr>
+                    @foreach ($userRoles as $role)
+                        <tr>
+                        	<td>{{ $role->id }}</td>
+                        	<td class="text-capitalize">{{ $role->role}}</td>
+                        	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
 
