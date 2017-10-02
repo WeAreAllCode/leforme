@@ -28,12 +28,11 @@ User Roles | LeForme: How you get your merde.
                         <tr>
                         	<td>{{ $role->id }}</td>
                         	<td class="text-capitalize">{{ $role->role}}</td>
-                        	<td class="text-center"><a href="/admin/user-roles/1"><i class="ti-pencil"></i></td>
+                        	<td class="text-center"><a href="/admin/user-roles/{{$role->id}}"><i class="ti-pencil"></i></td>
                         </tr>
                     @endforeach
                 </tbody>
             </table>
-
         </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
 <div class="container-fluid">
 	<div class="copyright pull-right">
-		&copy;2017 | Moticorp Creative Team
+		&copy; @php echo date('Y'); @endphp | Moticorp Creative Team
 	</div>
 </div>
