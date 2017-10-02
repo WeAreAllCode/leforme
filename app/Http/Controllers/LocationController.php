@@ -27,9 +27,9 @@ class LocationController extends Controller
     }
 
     /* LOCATIONS SHOW */
-    public function show($id)
+    public function show(Location $location)
     {
-        return view('locations.show');
+        return view('locations.show', compact('location'));
     }
 
     /* LOCATIONS EDIT */

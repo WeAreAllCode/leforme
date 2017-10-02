@@ -1,7 +1,7 @@
 @extends ('layouts.master')
 
 @section ('meta-title')
-Lab | Locations | LeForme: How you get your merde.
+{{$location->name}} | Locations | LeForme: How you get your merde.
 @endsection
 
 @section ('content')
@@ -17,7 +17,7 @@ Lab | Locations | LeForme: How you get your merde.
                 <div class="col-md-8">
                     <div class="form-group">
                         <label>Location Name</label>
-                        <input type="text" class="form-control border-input" name="name" placeholder="Loaction Name" value="lab">
+                        <input type="text" class="form-control border-input text-capitalize" name="name" placeholder="Loaction Name" value="{{$location->name}}">
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -25,10 +25,14 @@ Lab | Locations | LeForme: How you get your merde.
                         <label>Status</label>
                         <div class="form-control border-input">
                             <label class="radio-inline">
-                                <input type="radio" name="is_active" value="1" checked="checked">Active
+                                <input type="radio" name="is_active" value="1" 
+                                {{ $location->is_active == 1 ? 'checked="checked"' : '' }}
+                                >Active
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="is_active" value="2">Inactive
+                                <input type="radio" name="is_active" value="2"
+                                {{ $location->is_active != 1 ? 'checked="checked"' : '' }}
+                                >Inactive
                             </label>
                         </div>
                     </div>

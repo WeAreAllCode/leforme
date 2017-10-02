@@ -1,7 +1,7 @@
 @extends ('layouts.master')
 
 @section ('meta-title')
-16 oz | Sizes | LeForme: How you get your merde.
+{{$size->name}} | Sizes | LeForme: How you get your merde.
 @endsection
 
 @section ('content')
@@ -18,7 +18,7 @@
                     <div class="col-md-8">
                         <div class="form-group">
                             <label>Size Name</label>
-                            <input type="text" class="form-control border-input" name="name" placeholder="Size Name" value="16 oz">
+                            <input type="text" class="form-control border-input" name="name" placeholder="Size Name" value="{{$size->name}}">
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -26,10 +26,14 @@
                             <label>Status</label>
                             <div class="form-control border-input">
                                 <label class="radio-inline">
-                                    <input type="radio" name="is_active" value="1" checked="checked">Active
+                                    <input type="radio" name="is_active" value="1" 
+                                    {{ $size->is_active == 1 ? 'checked="checked"' : '' }}
+                                    >Active
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="is_active" value="2">Inactive
+                                    <input type="radio" name="is_active" value="2"
+                                    {{ $size->is_active != 1 ? 'checked="checked"' : '' }}
+                                    >Inactive
                                 </label>
                             </div>
                         </div>

@@ -27,9 +27,9 @@ class UserController extends Controller
     }
 
     /* USERS SHOW */
-    public function show($id)
+    public function show(User $user)
     {
-        return view('users.show');
+        return view('users.show', compact('user'));
     }
 
     /* USERS EDIT */

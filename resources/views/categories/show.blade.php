@@ -1,7 +1,7 @@
 @extends ('layouts.master')
 
 @section ('meta-title')
-Flavors | Categories | LeForme: How you get your merde.
+{{$category->name}} | Categories | LeForme: How you get your merde.
 @endsection
 
 @section ('content')
@@ -18,7 +18,7 @@ Flavors | Categories | LeForme: How you get your merde.
                     <div class="col-md-8">
                         <div class="form-group">
                             <label>Category Name</label>
-                            <input type="text" class="form-control border-input" name="name" placeholder="Category Name" value="Flavors">
+                            <input type="text" class="form-control border-input text-capitalize" name="name" placeholder="Category Name" value="{{$category->name}}">
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -26,10 +26,14 @@ Flavors | Categories | LeForme: How you get your merde.
                             <label>Status</label>
                             <div class="form-control border-input">
                                 <label class="radio-inline">
-                                    <input type="radio" name="is_active" value="1" checked="checked">Active
+                                    <input type="radio" name="is_active" value="1" 
+                                    {{ $category->is_active == 1 ? 'checked="checked"' : '' }}
+                                    >Active
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="is_active" value="2">Inactive
+                                    <input type="radio" name="is_active" value="2"
+                                    {{ $category->is_active != 1 ? 'checked="checked"' : '' }}
+                                    >Inactive
                                 </label>
                             </div>
                         </div>

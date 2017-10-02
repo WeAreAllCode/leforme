@@ -27,9 +27,9 @@ class CategoryController extends Controller
     }
 
     /* CATEGORIES SHOW */
-    public function show($id)
+    public function show(Category $category)
     {
-        return view('categories.show');
+        return view('categories.show', compact('category'));
     }
 
     /* CATEGORIES EDIT */

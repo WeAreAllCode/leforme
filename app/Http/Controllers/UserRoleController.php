@@ -27,9 +27,9 @@ class UserRoleController extends Controller
     }
 
     /* USER ROLES SHOW */
-    public function show($id)
+    public function show(UserRole $userRole)
     {
-        return view('user-roles.show');
+        return view('user-roles.show', compact('userRole'));
     }
 
     /* USER ROLES EDIT */

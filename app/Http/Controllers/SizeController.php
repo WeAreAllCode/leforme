@@ -27,9 +27,9 @@ class SizeController extends Controller
     }
 
     /* SIZES SHOW */
-    public function show($id)
+    public function show(Size $size)
     {
-        return view('sizes.show');
+        return view('sizes.show', compact('size'));
     }
 
     /* SIZES EDIT */

@@ -1,7 +1,7 @@
 @extends ('layouts.master')
 
 @section ('meta-title')
-Capella | Companies | LeForme: How you get your merde.
+{{$company->name}} | Companies | LeForme: How you get your merde.
 @endsection
 
 @section ('content')
@@ -18,13 +18,13 @@ Capella | Companies | LeForme: How you get your merde.
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control border-input" name="name" placeholder="Name" value="Capella">
+                            <input type="text" class="form-control border-input" name="name" placeholder="Name" value="{{$company->name}}">
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="form-group">
                             <label>Short Name</label>
-                            <input type="text" class="form-control border-input" name="short_name" placeholder="Short Name" value="CAP">
+                            <input type="text" class="form-control border-input" name="short_name" placeholder="Short Name" value="{{$company->short_name}}">
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -32,10 +32,14 @@ Capella | Companies | LeForme: How you get your merde.
                             <label>Status</label>
                             <div class="form-control border-input">
                                 <label class="radio-inline">
-                                    <input type="radio" name="is_active" value="1" checked="checked">Active
+                                    <input type="radio" name="is_active" value="1" 
+                                    {{ $company->is_active == 1 ? 'checked="checked"' : '' }}
+                                    >Active
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="is_active" value="2">Inactive
+                                    <input type="radio" name="is_active" value="2"
+                                    {{ $company->is_active != 1 ? 'checked="checked"' : '' }}
+                                    >Inactive
                                 </label>
                             </div>
                         </div>

@@ -27,9 +27,9 @@ class CompanyController extends Controller
     }
 
     /* COMPANIES SHOW */
-    public function show($id)
+    public function show(Company $company)
     {
-        return view('companies.show');
+        return view('companies.show', compact('company'));
     }
 
     /* COMPANIES EDIT */

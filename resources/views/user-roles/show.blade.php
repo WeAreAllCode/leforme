@@ -1,7 +1,7 @@
 @extends ('layouts.master')
 
 @section ('meta-title')
-Chet Faker | Users | LeForme: How you get your merde.
+{{$userRole->role}} | Users | LeForme: How you get your merde.
 @endsection
 
 @section ('content')
@@ -18,7 +18,7 @@ Chet Faker | Users | LeForme: How you get your merde.
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Role Name</label>
-                            <input type="text" class="form-control border-input" name="role" placeholder="Role Name" value="Admin">
+                            <input type="text" class="form-control border-input text-capitalize" name="role" placeholder="Role Name" value="{{$userRole->role}}">
                         </div>
                     </div>
                 </div>
