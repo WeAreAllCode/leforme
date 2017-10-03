@@ -18,7 +18,7 @@ Add Category | Categories | LeForme: How you get your merde.
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Category Name</label>
-                            <input type="text" class="form-control border-input" placeholder="Category Name" name="name">
+                            <input type="text" class="form-control border-input" placeholder="Category Name" name="name" value="{{ old('name') }}">
                         </div>
                     </div>
                 </div>

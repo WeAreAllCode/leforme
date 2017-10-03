@@ -20,68 +20,31 @@ Items | LeForme: How you get your merde.
             <table class="table table-striped pl-0 pr-0 mb-0">
                 <thead class="lf-thead">
                     <th class="col-sm-1"><strong>ID</strong></th>
-                    <th class="col-sm-5"><strong>Name</strong></th>
+                    <th class="col-sm-6"><strong>Name</strong></th>
                     <th class="col-sm-2"><strong>Categories</strong></th>
-                    <th class="col-sm-1"><strong>Company</strong></th>
                     <th class="col-sm-1 text-center"><strong>Drip</strong></th>
                     <th class="col-sm-1 text-center"><strong>Active</strong></th>
                     <th class="col-sm-1 text-center"><strong>Edit</strong></th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Cake Batter</td>
-                        <td>Flavors</td>
-                        <td>CAP</td>
-                        <td class="text-center"></td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/items/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Bad Ass Blueberry</td>
-                        <td>Juices, Labels</td>
-                        <td></td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/items/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>30mL Bottles - Clear</td>
-                        <td>Supplies</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/items/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Windex</td>
-                        <td>Supplies</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/items/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Vanilla Custard</td>
-                        <td>Flavors</td>
-                        <td>TFA</td>
-                        <td class="text-center"></td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/items/1"><i class="ti-pencil"></i></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>650 Starter Kit - Black</td>
-                        <td>Products</td>
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center">Yes</td>
-                        <td class="text-center"><a href="/admin/items/1"><i class="ti-pencil"></i></td>
-                    </tr>
+                    @foreach($items as $item)
+                        <tr>
+                            <td>{{$item->id}}</td>
+                            <td class="text-capitalize">{{$item->name}}</td>
+                            <td class="text-capitalize">
+                                @foreach($item->categories as $key => $category)
+                                    @if($key)
+                                        ,&nbsp;
+                                    @endif
+                                    {{$category->name}}
+                                @endforeach
+                            </td>
+                            <td class="text-center">{{ $item->is_drip == 1 ? 'Yes' : 'No' }}</td>
+                            <td class="text-center">{{ $item->is_active == 1 ? 'Yes' : 'No' }}</td>
+                            <td class="text-center"><a href="/admin/items/{{$item->id}}"><i class="ti-pencil"></i></td>
+                        </tr>
+                    @endforeach
+                    
                 </tbody>
             </table>
 

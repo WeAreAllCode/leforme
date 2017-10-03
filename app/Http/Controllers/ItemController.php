@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Item;
 use App\Category;
 use App\Company;
+use App\Location;
 use Illuminate\Http\Request;
 
 class ItemController extends Controller
@@ -29,9 +30,12 @@ class ItemController extends Controller
     }
 
     /* ITEMS SHOW */
-    public function show($id)
+    public function show(Item $item)
     {
-        return view('items.show');
+        $companies = Company::where('is_active', '=', 1)->get();
+        $categories = Category::where('is_active', '=', 1)->get();
+        $locations = Location::where('is_active', '=', 1)->get();
+        return view('items.show', compact('item', 'companies', 'categories', 'locations'));
     }
 
     /* ITEMS EDIT */

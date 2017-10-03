@@ -1,7 +1,7 @@
 @extends ('layouts.master')
 
 @section ('meta-title')
-Cake Batter | Items | LeForme: How you get your merde.
+{{$item->name}} | Items | LeForme: How you get your merde.
 @endsection
 
 @section ('content')
@@ -12,10 +12,19 @@ Cake Batter | Items | LeForme: How you get your merde.
         </div>
         <div class="content">
             <div class="author">
-              <img class="avatar border-white" src="/img/faces/face-2.jpg" alt="..."/>
-              <h4 class="title">Cake Batter<br />
-                 <a href="mailto:chet@moticorp.com"><small>Flavor</small></a>
-              </h4>
+                <img class="avatar border-white" src="/img/faces/face-2.jpg" alt="..."/>
+                <h4 class="title text-capitalize">{{$item->name}}<br />
+                    <a href="mailto:chet@moticorp.com">
+                        <small>
+                            @foreach($item->categories as $key => $category)
+                                @if($key)
+                                    ,&nbsp;
+                                @endif
+                                {{$category->name}}
+                            @endforeach
+                        </small>
+                    </a>
+                </h4>
             </div>
         </div>
         <hr>
@@ -58,7 +67,7 @@ Cake Batter | Items | LeForme: How you get your merde.
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control border-input" name="name" placeholder="Name" value="Cake Batter">
+                            <input type="text" class="form-control border-input" name="name" value="{{$item->name}}">
                         </div>
                     </div>
                 </div>
@@ -69,10 +78,14 @@ Cake Batter | Items | LeForme: How you get your merde.
                             <label>Status</label>
                             <div class="form-control border-input">
                                 <label class="radio-inline">
-                                    <input type="radio" name="is_active" value="1" checked="checked">Active
+                                    <input type="radio" name="is_active" value="1" 
+                                    {{ $item->is_active == 1 ? 'checked="checked"' : '' }}
+                                    >Active
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="is_active" value="2">Inactive
+                                    <input type="radio" name="is_active" value="0"
+                                    {{ $item->is_active != 1 ? 'checked="checked"' : '' }}
+                                    >Inactive
                                 </label>
                             </div>
                         </div>
@@ -82,10 +95,14 @@ Cake Batter | Items | LeForme: How you get your merde.
                             <label>On Drip (Juices Only)</label>
                             <div class="form-control border-input">
                                 <label class="radio-inline">
-                                    <input type="radio" name="is_drip" value="1" checked="checked">Yes
+                                    <input type="radio" name="is_drip" value="1"
+                                    {{ $item->is_drip == '1' ? 'checked="checked"' : '' }}
+                                    >Yes
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="is_drip" value="2">No
+                                    <input type="radio" name="is_drip" value="0"
+                                    {{ $item->is_drip == '0' ? 'checked="checked"' : '' }}
+                                    >No
                                 </label>
                             </div>
                         </div>
@@ -96,25 +113,14 @@ Cake Batter | Items | LeForme: How you get your merde.
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Company (Flavors Only)</label>
-                            <div class="form-control border-input">
-                                <label class="radio-inline">
-                                    <input type="radio" name="company_id" value="1" checked="checked">CAP
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="company_id" value="2">FA
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="company_id" value="3">FW
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="company_id" value="4">LA
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="company_id" value="5">MBV
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="company_id" value="6">TFA
-                                </label>
+                            <div class="form-control border-input" {{ empty($item->company_id) ? 'disabled' : '' }}>
+                                @foreach ($companies as $company)
+                                    <label class="radio-inline">
+                                        <input type="radio" name="company_id" value="{{$company->id}}"
+                                        {{ $item->company_id == $company->id ? 'checked="checked"' : '' }}
+                                        >{{$company->short_name}}
+                                    </label>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -125,21 +131,13 @@ Cake Batter | Items | LeForme: How you get your merde.
                         <div class="form-group">
                             <label>Available To (Select all that apply)</label>
                             <div class="form-control border-input">
-                                <label class="radio-inline">
-                                    <input type="radio" name="location_id" value="1" checked="checked">Lab
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="location_id" value="2">Vava
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="location_id" value="3">Purple
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="location_id" value="4">Columbia
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="location_id" value="5">Charelston
-                                </label>
+                                @foreach ($locations as $location)
+                                    <label class="radio-inline text-capitalize">
+                                        <input type="radio" name="location_id" value="{{$location->id}}" 
+                                        {{ $item->location_id == $location->id ? 'checked="checked"' : '' }}
+                                        >{{$location->name}}
+                                    </label>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -149,22 +147,14 @@ Cake Batter | Items | LeForme: How you get your merde.
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Categories (Select all that apply)</label>
-                            <div class="form-control border-input">
-                                <label class="radio-inline">
-                                    <input type="radio" name="category_id" value="1" checked="checked">Flavors
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="category_id" value="2">Labels
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="category_id" value="3">Juices
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="category_id" value="4">Products
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="category_id" value="5">Supplies
-                                </label>
+                            <div class="form-control border-input text-capitalize">
+                                @foreach($categories as $category)
+                                    <label class="radio-inline">
+                                        <input type="radio" name="category_id" value="{{$category->id}}" 
+                                        {{ $item->category_id == $category->id ? 'checked="checked"' : '' }}
+                                        >{{$category->name}}
+                                    </label>
+                                @endforeach
                             </div>
                         </div>
                     </div>

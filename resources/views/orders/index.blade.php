@@ -17,51 +17,58 @@ Orders | LeForme: How you get your merde.
                     <th><strong>ID</strong></th>
                 	<th><strong>Date</strong></th>
                 	<th><strong>User</strong></th>
-                	<th><strong>Items</strong></th>
-                	<th class="text-right"><strong>Active</strong></th>
+                    <th><strong>Category</strong></th>
+                	<th class="text-center"><strong>Items</strong></th>
+                	<th class="text-center"><strong>Active</strong></th>
                 </thead>
                 <tbody>
                     <tr>
                     	<td>1</td>
-                    	<td>Dakota Rice</td>
-                    	<td>$36,738</td>
-                    	<td>Tiger</td>
-                    	<td class="text-right"><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                    	<td>Sep 29, 2017</td>
+                    	<td>Joey B.</td>
+                        <td>Supplies</td>
+                    	<td class="text-center">12</td>
+                    	<td class="text-center"><a href="/orders/id"><i class="ti-eye"></i></td>
                     </tr>
                     <tr>
                     	<td>2</td>
-                    	<td>Minerva Hooper</td>
-                    	<td>$23,789</td>
-                    	<td>Curaçao</td>
-                    	<td class="text-right"><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td>Sep 26, 2017</td>
+                        <td>Todd</td>
+                        <td>Products</td>
+                        <td class="text-center">4</td>
+                        <td class="text-center"><a href="/orders/id"><i class="ti-eye"></i></td>
                     </tr>
                     <tr>
                     	<td>3</td>
-                    	<td>Sage Rodriguez</td>
-                    	<td>$56,142</td>
-                    	<td>Netherlands</td>
-                    	<td class="text-right"><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td>Sep 19, 2017</td>
+                        <td>John J.</td>
+                        <td>Flavors</td>
+                        <td class="text-center">26</td>
+                        <td class="text-center"><a href="/orders/id"><i class="ti-eye"></i></td>
                     </tr>
                     <tr>
-                    	<td>4</td>
-                    	<td>Philip Chaney</td>
-                    	<td>$38,735</td>
-                    	<td>Korea, South</td>
-                    	<td class="text-right"><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td>4</td>
+                        <td>Sep 03, 2017</td>
+                        <td>John J.</td>
+                        <td>Supplies</td>
+                        <td class="text-center">1</td>
+                        <td class="text-center"><a href="/orders/id"><i class="ti-eye"></i></td>
                     </tr>
                     <tr>
-                    	<td>5</td>
-                    	<td>Doris Greene</td>
-                    	<td>$63,542</td>
-                    	<td>Malawi</td>
-                    	<td class="text-right"><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td>5</td>
+                        <td>Aug 21, 2017</td>
+                        <td>Sammy</td>
+                        <td>Juices</td>
+                        <td class="text-center">12</td>
+                        <td class="text-center"><a href="/orders/id"><i class="ti-eye"></i></td>
                     </tr>
                     <tr>
-                    	<td>6</td>
-                    	<td>Mason Porter</td>
-                    	<td>$78,615</td>
-                    	<td>Chile</td>
-                    	<td class="text-right"><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td>6</td>
+                        <td>Aug 20, 2017</td>
+                        <td>John J.</td>
+                        <td>Labels</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"><a href="/orders/id"><i class="ti-eye"></i></td>
                     </tr>
                 </tbody>
             </table>
